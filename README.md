@@ -1,5 +1,10 @@
 # Process Memory Management and Buffer Cache in Linux Kernel 6.10
 
+**Disclaimer:** This document contains Mermaid diagrams. To view these diagrams properly, you'll need a Mermaid-compatible Markdown viewer or extension. If you're unable to see the diagrams, please refer to the GitHub repository linked below for proper visualization.
+
+For a complete visualization of the concepts discussed in this blog, including additional diagrams and code examples, please visit:
+https://github.com/pauljainta/linux-page-cache
+
 Memory management is one of the most fundamental parts of an operating system, and Linux Kernel 6.10 provides sophisticated mechanisms to handle it efficiently. This post will outline key concepts in process memory management and the buffer cache, such as Virtual Memory Areas (VMAs), red-black trees, reverse mapping for anonymous and file-mapped memory, and address spaces. We will also delve into how page faults are handled and the workings of swap in and swap out operations.
 
 ## Virtual Memory Areas (VMAs)
@@ -93,3 +98,5 @@ graph LR;
 ### Conclusion
 
 Linux Kernel 6.10 implements efficient memory management mechanisms like VMAs, red-black trees, reverse mapping, and swap management to ensure optimal performance and scalability. Understanding these components helps system administrators and developers grasp the nuances of how Linux handles memory, ultimately leading to better system optimization and performance troubleshooting.
+
+For more detailed information, code examples, and additional visualizations, please refer to the GitHub repository: https://github.com/pauljainta/linux-page-cache
